@@ -1,42 +1,27 @@
-# Automating racing data from lardbrokes and racenet websites for efficient and more accurate betting
+# Automating horse racing data collection from Racenet and Ladbrokes
 
 ## General Information
-This Python script performs web scraping to extract horse racing data from two different websites and merges the information into a single DataFrame. The collected data includes race statistics, betting information, and other relevant details for each horse participating in a specific race.
-
-It was a small part of one of my freelance projects, which I successfully developed a comprehensive automation solution for my client's punting process. This innovative system significantly streamlined the analysis phase, resulting in substantial time savings. By leveraging automation, we were able to achieve a more efficient and effective approach to punting, enabling my client to make informed decisions in a timely manner.
+This project uses Python to automate the collection of horse racing and betting data from Racenet and Ladbrokes.
+The scraped data is structured into a Pandas DataFrame to support further analysis of horse performance and betting statistics
 
 ## Technologies Used
-* Python: The programming language used for this project.
-* Libraries:
-    * selenium webdriver: It is used to create robust, browser-based regression automation suites and tests, scale and distribute scripts across many environments
-    * pandas: Utilized to manipulate and structure the data into a DataFrame.
+
+- Python
+- Selenium – automated browser interaction for data scraping
+- Pandas – data cleaning and structuring
     
 
-## Objectives
-The main objectives of this real estate investment analysis were as follows:
+## Key Features 
 
-* Data Collection: Gather detailed information on various horses, jockeys and trainers.
-* Data Analysis: Utilize the collected data to perform a comprehensive analysis of each horses, jockeys and trainers, evaluating factors such as win rate, place rate, career success etc.
-* Horse Ranking: Rank the horses based on their potential, considering the defined criteria, to identify the top-performing horses punting.
+- Automated data extraction from multiple racing websites
+- Merging data into a structured dataset
+- Preparing race statistics and betting data for analysis
 
-## Steps to use the script:
+## Possible Use cases
 
-* Install the required libraries if you haven't already:
-* Copy code
-* pip install selenium, pandas
-* Replace the website_racenet and website_ladbrokes variables with the links to the race pages you want to scrape data from.
-* Execute the script in your preferred Python environment.
-
-## Script Overview:
-
-* The script uses the Selenium library to automate web browsing and data extraction.
-* It scrapes various race details, including field conditions, horse names, and horse information like career stats, win rate, and more.
-* After collecting the horse information from the first website, the script navigates to the website_ladbrokes.
-* It then clicks on the "Bet Tracker" element to access the betting data for each horse.
-* The script collects the horse names and corresponding betting data (pound_sign and dollar_sign).
-* Then it gathers and cleans all the data (race date in weeks,position and lengths behind the winner) of each horse's recent three races excluding the trail races.
-* All the data is merged into a single DataFrame (final_df), which includes all the information scraped from both websites.
-
+- Horse racing performance analysis
+- Betting strategy exploration
+- Building structured datasets for further statistical analysis
 
 ## Permission:
 Professional contract with the client has not been breached in this repository.
